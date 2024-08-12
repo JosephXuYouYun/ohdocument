@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="lab"
+               path="000%20Documentation/006%20Web%20documentation/EN/lab_weighing.html"/>
+   <appContext helpID="lab"
+               path="000%20Documentation/006%20Web%20documentation/EN/Industrial%20Weighing.html"/>
+   <appContext helpID="lab"
+               path="000%20Documentation/006%20Web%20documentation/EN/Moisture%20Analyzer.html"/>
+   <appContext helpID="lab"
+               path="000%20Documentation/006%20Web%20documentation/EN/Electro-chemistry.html"/>
+   <appContext helpID="jewlery_balance"
+               path="000%20Documentation/006%20Web%20documentation/EN/jewlery_balance.html"/>
+   <appContext helpID="lab"
+               path="000%20Documentation/006%20Web%20documentation/EN/Lab%20Equipment.html"/>
+   <appContext helpID="lab"
+               path="000%20Documentation/006%20Web%20documentation/EN/Printer.html"/>
+</map>

@@ -1,0 +1,71 @@
+/* --------------Flex using css (working only in html)------------------- */
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content:; */
+    align-items: flex-end;
+    row-gap: 10px;
+    gap: 2%;
+
+}
+
+.flex-container > div {
+    background-color: #e30f0f;
+    font-size: 14px;
+    width: 23%;
+    /* flex-direction: column; */
+
+  }
+
+  .flex-container > div > p{
+    font-size: 14px;
+    /* text-align: center; */
+  }
+
+  .flex-container > div > figure{
+    /* text-align: center; */
+    /* margin: 0 0 0 0; */
+    margin-top: 8px;
+  }
+
+/* -------------------Flex using side by side (work only in PDF)--------------------- */
+  *[outputclass ~= "side-by-side"] > *[class ~= "topic/p"] {
+    display:inline-block;
+    width: 45%;
+  }  
+  
+  *[outputclass ~= "side-by-side"] > *[class ~= "topic/fig"] {
+    display:inline-block;
+    width: 25%;
+  }  
+
+  *[outputclass ~= "side-by-side"] > *[class ~= "topic/fig"]  > *[class ~= "topic/image"] {
+    width:100%;
+  }
+
+  *[outputclass ~= "side-by-side"] > *[class ~= "topic/p"] {
+    vertical-align:top;
+  }  
+  
+  *[outputclass ~= "side-by-side"] > *[class ~= "topic/fig"] {  
+    vertical-align:top;
+  }  
+
+  /* -------------------Add topic image---------------------- */
+.wh_tile[data-id='ind'] {
+    background-image:url('./resources/lab.png');
+    background-position: top;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+/* .wh_tile_text {
+  background-color: black;
+  opacity: 80%;
+}
+
+.wh_tile_title a, .wh_tile_title span {
+  color: white;
+}
+     */

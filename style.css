@@ -1,0 +1,52 @@
+/* --------------Flex using css (working only in html)------------------- */
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    row-gap: 10px;
+    gap: 2%;
+    /* width: 20%; */
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    font-size: 14px;
+    flex-direction: column;
+
+  }
+
+  .flex-container > div > p{
+    font-size: 14px;
+    text-align: center;
+  }
+
+/* -------------------Flex using side by side (work only in PDF)--------------------- */
+  *[outputclass ~= "side-by-side"] > *[class ~= "topic/p"] {
+    display:inline-block;
+    width: 45%;
+  }  
+  
+  *[outputclass ~= "side-by-side"] > *[class ~= "topic/fig"] {
+    display:inline-block;
+    width: 25%;
+  }  
+
+  *[outputclass ~= "side-by-side"] > *[class ~= "topic/fig"]  > *[class ~= "topic/image"] {
+    width:100%;
+  }
+
+  *[outputclass ~= "side-by-side"] > *[class ~= "topic/p"] {
+    vertical-align:top;
+  }  
+  
+  *[outputclass ~= "side-by-side"] > *[class ~= "topic/fig"] {  
+    vertical-align:top;
+  }  
+
+  /* -------------------Add topic image---------------------- */
+.wh_tile[data-id='ind']> div {
+    background-image:url('resources/lab.png');
+}
+    
